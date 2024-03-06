@@ -23,7 +23,6 @@ sudo yarn global add pm2
 # Clone the repository
 git clone https://github.com/Joelayo/Week-2_Azure_CloudOps.git
 cd Week-2_Azure_CloudOps/client
-cd Week-2_Azure_CloudOps/client
  npm install
  npm run build
  sudo cp -r build/* /var/www/html
