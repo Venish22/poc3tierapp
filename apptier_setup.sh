@@ -7,8 +7,12 @@ sudo apt install apache2 -y
 
 sudo apt install git
 
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
-sudo apt-get install -y nodejs -y
+sudo dpkg --configure -a
+sudo apt install -f
+sudo apt update
+
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
 sudo apt update -y
 
