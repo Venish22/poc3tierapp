@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt install nodejs
+
 chmod u+x setup.sh
 ./setup.sh
 git clone https://github.com/Joelayo/Week-2_Azure_CloudOps.git
