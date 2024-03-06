@@ -34,7 +34,7 @@ cd Week-2_Azure_CloudOps/backend
 cd Week-2_Azure_CloudOps/backend
 cat > .env <<EOF
 # Content of .env file
-DB_HOST=demopocsqlllwedo.database.windows.net
+DB_HOST=demopocmysqlwedo.database.windows.net
 DB_USERNAME=azureuser
 DB_PASSWORD="password@123@9(&)"
 PORT=3306
