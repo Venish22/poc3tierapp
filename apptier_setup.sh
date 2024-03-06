@@ -25,7 +25,7 @@ git clone https://github.com/Joelayo/Week-2_Azure_CloudOps.git
 cd Week-2_Azure_CloudOps/backend
 cat > .env <<EOF
 # Content of .env file
-DB_HOST=demopocsqleeeweedo.database.windows.net
+DB_HOST=demopocsqllwedo.database.windows.net
 DB_USERNAME=azureuser
 DB_PASSWORD="password@123@9(&)"
 PORT=3306
