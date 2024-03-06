@@ -1,27 +1,28 @@
 #!/bin/bash
 
-  sudo apt update -y
+# Update package list
+sudo apt update -y
 
-  sudo apt install apache2 -y
+# Install necessary packages
+sudo apt install -y curl git
 
-  curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
-  sudo apt-get install -y nodejs -y
+# Install Node.js and npm
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
-  sudo apt update -y
+# Install corepack
+sudo npm install -g corepack
 
-  sudo npm install -g corepack -y
+# Enable and prepare corepack
+corepack enable
+corepack prepare yarn@stable --activate --yes
 
-  corepack enable
+# Install pm2 globally
+sudo yarn global add pm2
 
-  corepack prepare yarn@stable --activate --yes
-
-  sudo yarn global add pm2
-
-sudo apt install git  
-
-chmod u+x setup.sh
-./setup.sh
+# Clone the repository
 git clone https://github.com/Joelayo/Week-2_Azure_CloudOps.git
+cd Week-2_Azure_CloudOps/client
 cd Week-2_Azure_CloudOps/client
  npm install
  npm run build
