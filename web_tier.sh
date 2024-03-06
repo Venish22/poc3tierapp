@@ -2,6 +2,9 @@
 
 sudo apt update -y
 sudo apt install apache2 -y
+
+sudo apt install -y curl git
+
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
 sudo apt-get install -y nodejs -y
 sudo apt update -y
